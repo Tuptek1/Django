@@ -12,7 +12,6 @@ class LoginForm(AuthenticationForm):
             }
         )
     )
-
     password = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
@@ -36,16 +35,14 @@ class SignupForm(UserCreationForm):
             }
         )
     )
-
     email = forms.CharField(
         widget=forms.EmailInput(
             attrs={
-                "placeholder": "Your email adress",
+                "placeholder": "Your email address",
                 "class": "w-full py-4 px-6 rounded-xl",
             }
         )
     )
-
     password1 = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
@@ -54,7 +51,6 @@ class SignupForm(UserCreationForm):
             }
         )
     )
-
     password2 = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
